@@ -282,6 +282,9 @@ background-color: #2f303a;
 
   color: #ffffff;
 }
+.address:hover,:focus{
+  color: var(--hover-logo-buttonfont-color);
+}
 
 .mail-foot,
 .tell-foot {
