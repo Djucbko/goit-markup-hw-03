@@ -209,7 +209,6 @@ img {
 }
 
 .team {
-  
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -293,7 +292,6 @@ background-color: #2f303a;
 .address:hover,:focus{
   color: var(--hover-logo-buttonfont-color);
 }
-
 .mail-foot,
 .tell-foot {
   font-style: normal;
@@ -312,7 +310,6 @@ background-color: #2f303a;
   color: var(--hover-logo-buttonfont-color);
 }
 /*hero-portfolio*/
-
 .hero-h2 {
         position: absolute;
         white-space: nowrap;
@@ -325,9 +322,6 @@ background-color: #2f303a;
         clip-path: inset(50%);
         margin: -1px;
     }
-
-   
-    
 .button-list{
     display: flex;
     margin-bottom: 50px;
@@ -365,7 +359,6 @@ background-color: #2f303a;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left:calc(-1 * var(--card-set-gap));
 }
