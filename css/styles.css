@@ -19,6 +19,7 @@ img {
   --hover-logo-buttonfont-color: #2196f3;
   --text-color: #212121;
   --description-about-color: #757575;
+  --card-set-gap:30px;
 }
 .body {
   background-color: #ffffff;
@@ -51,6 +52,13 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.header{
+  border-bottom: 1px solid var(--hover-logo-buttonfont-color);
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -69,8 +77,8 @@ img {
 
 .site-nav-link {
   display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -119,9 +127,7 @@ img {
 /*hero*/
 .hero {
   padding-top: 200px;
-  padding-right: 452px;
   padding-bottom: 280px;
-  padding-left: 452px;
   margin-left: auto;
   margin-right: auto;
   width: 1600px;
@@ -144,7 +150,6 @@ img {
   background-color: var(--hover-logo-buttonfont-color);
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   border-color: var(--hover-logo-buttonfont-color);
   text-align: center;
   font-weight: 700;
@@ -162,9 +167,7 @@ img {
 /*features*/
 .features-list {
   display: flex;
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
+  }
 .features-list .text:not(:last-child) {
   margin-right: 30px;
 }
@@ -189,7 +192,7 @@ img {
 }
 .imgs-list {
   display: flex;
-  padding-bottom: 94px;
+  
 }
 .imgs-list .imgs:not(:last-child) {
   margin-right: 30px;
@@ -218,12 +221,10 @@ img {
   padding: 30px;
 }
 .our-team {
-  padding-top: 94px;
   background-color: #f5f4fa;
 }
 .our-team-list {
   display: flex;
-   padding-bottom: 94px;
 }
 .our-team-list .team:not(:last-child) {
   margin-right: 30px;
@@ -251,7 +252,9 @@ img {
 /*footer*/
 .footer {
   padding-top: 60px;
+  padding-bottom: 60px;
 background-color: #2f303a;
+
   }
 
 .logo {
@@ -270,8 +273,7 @@ background-color: #2f303a;
 }
 .foot-nav {
   margin-top: 20px;
-  padding-bottom: 60px;
-}
+ }
 
 .address {
   font-style: normal;
@@ -322,8 +324,7 @@ background-color: #2f303a;
     
 .button-list{
     display: flex;
-   padding-top: 94px;
-   padding-bottom: 50px;
+    margin-bottom: 50px;
    justify-content: center;
    }   
 .button-list .buttons+.buttons{
@@ -336,7 +337,6 @@ background-color: #2f303a;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  border-radius: 4px;
   border-color: #f5f4fa;
   color: var(--text-color);
   cursor: pointer;
@@ -362,27 +362,28 @@ background-color: #2f303a;
   border-radius: 4px;
 }
 /*Cards*/
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 94px;
-    
+.card-set{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 94px;
+
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left:calc(-1 * var(--card-set-gap));
 }
-.cards-set{
-    margin-right: 30px;
-    margin-bottom: 30px;
-    
+.card-set > .item{
+ flex-basis: calc(100% / 3 - var(--card-set-gap));
+ margin-left: var(--card-set-gap);
+ margin-top: var(--card-set-gap);
 }
- .cards-set:nth-child(3n){
-    margin-right: 0;
- }   
-  .cards-set:nth-last-child(-n + 3){
-    margin-bottom: 0;
-  }
+.p-card {
+  padding: 20px 24px 4px 24px;
+  border: 1px solid #EEEEEE;
+}
 
 
 .p-title {
-    padding: 20px 24px 4px 24px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -391,8 +392,7 @@ background-color: #2f303a;
 }
 
 .description {
-    padding: 4px 24px 20px 24px;
-    font-size: 16px;
+  font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--description-about-color);
