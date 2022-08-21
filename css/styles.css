@@ -126,8 +126,7 @@ img {
 
 /*hero*/
 .hero {
-  padding-top: 200px;
-  padding-bottom: 280px;
+  padding: 200px;
   margin-left: auto;
   margin-right: auto;
   width: 1600px;
@@ -171,12 +170,8 @@ img {
   margin-left: calc(-1 * var(--card-set-gap));
 }
 .features-list>.text{
-  flex-basis: calc(100% / 4 - var(--card-set-gap));;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));;
   margin-left:var(--card-set-gap);
-}
-
-.text {
-  width: 270px;
 }
 .feature {
   margin-bottom: 10px;
@@ -213,22 +208,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-
-.team {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
 .team-container {
   padding: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
+ }
 .our-team {
   background-color: #f5f4fa;
   }
@@ -241,8 +223,9 @@ img {
   margin-left: var(--card-set-gap);
 }
 .background {
-  width: 270px;
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .who {
   margin-bottom: 10px;
@@ -357,6 +340,7 @@ background-color: #2f303a;
   color: #ffffff;
   background: var(--hover-logo-buttonfont-color);
   cursor: pointer; 
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*Cards*/
 .card-set{
